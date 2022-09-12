@@ -29,6 +29,7 @@ a:hover {
   text-decoration: underline;
 }
 section {
+  position: relative;
   width: 100%;
 }
 nav {
@@ -39,6 +40,7 @@ nav {
   width: 100%;
 }
 .container {
+  
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -190,4 +192,14 @@ nav {
   #navMenu.active > span:nth-child(3) {
     transform: translateY(-9px) rotate(90deg);
   }
+}
+
+.hero_bg-elem {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 670px;
+  background-color:#251D1A ;
+  z-index: -1;
 }
