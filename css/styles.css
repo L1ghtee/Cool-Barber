@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* */
+
+body {
+  font-family: Montserrat;
+  color: #fff;
+  background-color: #3b322d;
+  margin: 0;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 110%;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 1s;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  width: 100%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3b322d;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-bar {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 135%;
+  color: #efe7e2;
+  padding: 35px 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-wrp {
+  max-width: 199px;
+}
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+.nav-link {
+  display: flex;
+  font-size: 14px;
+  line-height: 135%;
+  gap: 15px;
+  white-space: nowrap;
+}
+.phone-number {
+  font-size: 18px;
+  line-height: 152%;
+  color: #ffffff;
+}
+.content {
+  padding: 0 130px;
+}
+.content_hero {
+  padding-top: 120px;
+}
+
+.hero-banner {
+  background-image: url("/images/hero image.png");
+  width: auto;
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 60px 60px 60px;
+}
+.hero-titles {
+  display: flex;
+}
+@media screen and (max-width: 1440px) and (min-width: 1000px) {
+  .content {
+    padding-left: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
+    padding-right: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
+  }
+  .nav-bar {
+    padding-left: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
+    padding-right: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
+  }
+  .nav-menu {
+    gap: calc(10px + (40 - 10) * ((100vw - 1000px) / (1440 - 1000)));
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .content {
+    padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .nav-bar {
+    padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    z-index: 50;
+  }
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: -40vw;
+    left: 0;
+
+    width: 100%;
+    background-color: #3b322d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    gap: 20px;
+    font-size: 25px;
+    align-items: center;
+    z-index: 1;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  .nav-menu.active {
+    top: 120px;
+    opacity: 1;
+  }
+  .link-txt {
+    display: none;
+  }
+  .btn {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  #navMenu {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #navMenu > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: #ff6e40;
+  }
+  #navMenu > span:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  #navMenu,
+  #navMenu > span {
+    transition: all 0.4s ease-in-out;
+  }
+  #navMenu.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+  }
+  #navMenu.active > span:nth-child(2) {
+    width: 0;
+  }
+  #navMenu.active > span:nth-child(1),
+  #navMenu.active > span:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  #navMenu.active > span:nth-child(1) {
+    transform: translateY(9px);
+  }
+  #navMenu.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+  }
+}
