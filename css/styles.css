@@ -87,7 +87,7 @@ nav {
 }
 
 .hero-banner {
-  background-image: url("../images/hero-image.png");
+  background-image: url("images\hero-image.png");
   width: auto;
   height: 1000px;
   background-size: cover;
