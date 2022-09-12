@@ -18,7 +18,10 @@ h1 {
   font-style: normal;
   font-weight: 900;
   font-size: 70px;
-  line-height: 110%;
+  line-height: 77px;
+  margin: 0;
+  width: 100%;
+  max-width: 671px;
 }
 a {
   color: #fff;
@@ -38,9 +41,9 @@ nav {
   left: 0;
   background-color: #3b322d;
   width: 100%;
+  z-index: 55;
 }
 .container {
-  
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -90,9 +93,65 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 40px 60px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero-titles {
   display: flex;
+}
+
+.hero_bg-elem {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 670px;
+  background-color: #251d1a;
+  z-index: -1;
+}
+.titles-leftside {
+  margin-top: 40px;
+}
+.hero-supertitle {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  max-width: 221px;
+  max-height: 40px;
+  padding: 10px 25px;
+  border: #efe7e2 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+.hero-subtitle {
+  max-width: 301px;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #efe7e2;
+}
+.hero-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 51px;
+  width: 194px;
+height: 68px;
+background-color: #ff6e40;
+border: none;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 152%;
+color: #FFFFFF;
 }
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
   .content {
@@ -192,14 +251,4 @@ nav {
   #navMenu.active > span:nth-child(3) {
     transform: translateY(-9px) rotate(90deg);
   }
-}
-
-.hero_bg-elem {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 670px;
-  background-color:#251D1A ;
-  z-index: -1;
 }
