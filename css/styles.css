@@ -143,15 +143,48 @@ nav {
   align-items: center;
   padding: 25px 51px;
   width: 194px;
-height: 68px;
-background-color: #ff6e40;
-border: none;
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 152%;
-color: #FFFFFF;
+  height: 68px;
+  background-color: #ff6e40;
+  border: none;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 152%;
+  color: #ffffff;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1180px;
+}
+.feature {
+  font-family: "Fira Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+.feature-heading {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32.4px;
+  color: #efe7e2;
+}
+.feature-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #b7aaa2;
+  max-width: 244px;
 }
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
   .content {
