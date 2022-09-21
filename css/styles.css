@@ -208,6 +208,22 @@ nav {
   margin: 12px auto 60px auto;
   color: #EFE7E2;
 }
+.img-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.left-side{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+.right-side{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
   .content {
     padding-left: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
