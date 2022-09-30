@@ -229,7 +229,7 @@ nav {
   width: 100%;
 }
 .small-img{
-  width: 46%;
+  width: 48%;
 }
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
   .content {
@@ -256,6 +256,9 @@ nav {
   .hero-banner{
     height: 600px;
     background-position: 50% 50%;
+    padding-left:calc(20px + (60 - 20) * ((100vw - 320px) / (1440 - 320))); 
+    padding-right:calc(20px + (60 - 20) * ((100vw - 320px) / (1440 - 320))); ;
+
   }
   .hero-titles{
     flex-direction: column;
@@ -290,18 +293,22 @@ nav {
     padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
     z-index: 50;
   }
+  .small-img{
+    width: 46% ;
+  }
   .nav-menu {
     flex-direction: column;
     position: absolute;
-    top: -65vw;
-    left: 0;
-
+    top: 120px;
+    
+    right: -150%;
     width: 100%;
-    background-color: #3b322d;
-    padding-top: 20px;
+    height: calc(100vh - 120px);
+    background-color: #251d1a;
+    padding-top: 40px;
     padding-bottom: 20px;
     padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
-    gap: 20px;
+    gap: 40px;
     font-size: 25px;
     align-items: center;
     z-index: 1;
@@ -312,6 +319,7 @@ nav {
   .nav-menu.active {
     top: 120px;
     opacity: 1;
+    right: 0;
   }
   .link-txt {
     display: none;
