@@ -37,7 +37,7 @@ a {
   transition: all 1s;
 }
 a:hover {
-  text-decoration: underline;
+  color: #ff6e40;
 }
 section {
   position: relative;
@@ -67,6 +67,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .logo-wrp {
   max-width: 199px;
@@ -74,6 +75,8 @@ nav {
 .nav-menu {
   display: flex;
   gap: 40px;
+  white-space: nowrap;
+  margin: 0 10px 0 10px;
 }
 .nav-link {
   display: flex;
@@ -85,7 +88,7 @@ nav {
 .phone-number {
   font-size: 18px;
   line-height: 152%;
-  color: #ffffff;
+  
 }
 .content {
   padding: 0 130px;
@@ -169,6 +172,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  gap: 20px;
   max-width: 1180px;
 }
 .feature {
@@ -228,10 +232,14 @@ nav {
 .big-img{
   width: 100%;
 }
-.small-img{
-  width: 48%;
-}
+
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
+  .logo-wrp{
+    max-width: 160px;
+  }
+  .small-img{
+    width: 47%;
+  }
   .content {
     padding-left: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
     padding-right: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
@@ -250,9 +258,7 @@ nav {
     font-size: 45px;
   line-height: 52px;
   }
-  .logo-wrp{
-    max-width: 160px;
-  }
+  
   .hero-banner{
     height: 600px;
     background-position: 50% 50%;
@@ -300,7 +306,7 @@ nav {
     flex-direction: column;
     position: absolute;
     top: 120px;
-    
+    margin: 0;
     right: -150%;
     width: 100%;
     height: calc(100vh - 120px);
@@ -356,7 +362,7 @@ nav {
     transition: all 0.4s ease-in-out;
   }
   #navMenu.active {
-    transition-delay: 0.8s;
+    transition-delay: 0.4s;
     transform: rotate(45deg);
   }
   #navMenu.active > span:nth-child(2) {
