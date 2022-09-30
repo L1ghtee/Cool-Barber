@@ -217,13 +217,20 @@ nav {
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
 .right-side{
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
-
+.big-img{
+  width: 100%;
+}
+.small-img{
+  width: 46%;
+}
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
   .content {
     padding-left: calc(50px + (130 - 50) * ((100vw - 1000px) / (1440 - 1000)));
@@ -239,6 +246,41 @@ nav {
 }
 
 @media screen and (max-width: 999px) {
+  h1{
+    font-size: 45px;
+  line-height: 52px;
+  }
+  .logo-wrp{
+    max-width: 160px;
+  }
+  .hero-banner{
+    height: 600px;
+    background-position: 50% 50%;
+  }
+  .hero-titles{
+    flex-direction: column;
+  }
+  .features{
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero_bg-elem{
+    height: 700px;
+  }
+  .img-wrap{
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-side{
+    width: 100%;
+
+  }
+  .right-side{
+    width: 100%;
+  }
   .content {
     padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
     padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
@@ -251,7 +293,7 @@ nav {
   .nav-menu {
     flex-direction: column;
     position: absolute;
-    top: -40vw;
+    top: -65vw;
     left: 0;
 
     width: 100%;
