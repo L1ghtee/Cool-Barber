@@ -13,6 +13,7 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
+
 h1 {
   font-family: "Playfair Display";
   font-style: normal;
@@ -23,7 +24,7 @@ h1 {
   width: 100%;
   max-width: 671px;
 }
-h2{
+h2 {
   font-family: "Fira Sans";
   font-weight: 700;
   font-size: 48px;
@@ -67,7 +68,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .logo-wrp {
   max-width: 199px;
@@ -88,7 +88,6 @@ nav {
 .phone-number {
   font-size: 18px;
   line-height: 152%;
-  
 }
 .content {
   padding: 0 130px;
@@ -198,11 +197,11 @@ nav {
   color: #b7aaa2;
   max-width: 244px;
 }
-.about-us{
+.about-us {
   padding-top: 120px;
   padding-bottom: 60px;
 }
-.about-us_txt{
+.about-us_txt {
   font-family: "Fira Sans";
   font-weight: 400;
   font-size: 15px;
@@ -210,34 +209,66 @@ nav {
   text-align: center;
   max-width: 580px;
   margin: 12px auto 60px auto;
-  color: #EFE7E2;
+  color: #efe7e2;
 }
-.img-wrap{
+.img-wrap {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-.left-side{
+.left-side {
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
   justify-content: space-between;
 }
-.right-side{
+.right-side {
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
   justify-content: space-between;
 }
-.big-img{
+.big-img {
   width: 100%;
 }
-
+.btns-wrap {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.about-us_big-btn {
+  padding: 25px 51px;
+  background-color: #ff6e40;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 152%;
+}
+.about-us_big-btn:hover {
+  color: #ffffff;
+  background-color: #251d1a;
+}
+.about-us_btn {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 29px 40px;
+  border: 1px solid #efe7e2;
+  max-width: 216px;
+  max-height: 68px;
+}
+.about-us_btn:hover {
+  border: 1px solid #ff6e40;
+}
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
-  .logo-wrp{
+  .logo-wrp {
     max-width: 160px;
   }
-  .small-img{
+  .small-img {
     width: 47%;
   }
   .content {
@@ -254,40 +285,40 @@ nav {
 }
 
 @media screen and (max-width: 999px) {
-  h1{
+  h1 {
     font-size: 45px;
-  line-height: 52px;
+    line-height: 52px;
   }
-  
-  .hero-banner{
+  .logo-wrp {
+    max-width: 160px;
+  }
+  .hero-banner {
     height: 600px;
     background-position: 50% 50%;
-    padding-left:calc(20px + (60 - 20) * ((100vw - 320px) / (1440 - 320))); 
-    padding-right:calc(20px + (60 - 20) * ((100vw - 320px) / (1440 - 320))); ;
-
+    padding-left: calc(20px + (60 - 20) * ((100vw - 320px) / (1440 - 320)));
+    padding-right: calc(20px + (60 - 20) * ((100vw - 320px) / (1440 - 320)));
   }
-  .hero-titles{
+  .hero-titles {
     flex-direction: column;
   }
-  .features{
+  .features {
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 50px;
     align-items: center;
     gap: 20px;
   }
-  .hero_bg-elem{
+  .hero_bg-elem {
     height: 700px;
   }
-  .img-wrap{
+  .img-wrap {
     flex-direction: column;
     width: 100%;
   }
-  .left-side{
+  .left-side {
     width: 100%;
-
   }
-  .right-side{
+  .right-side {
     width: 100%;
   }
   .content {
@@ -299,8 +330,8 @@ nav {
     padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
     z-index: 50;
   }
-  .small-img{
-    width: 46% ;
+  .small-img {
+    width: 46%;
   }
   .nav-menu {
     flex-direction: column;
