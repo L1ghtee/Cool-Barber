@@ -13,7 +13,9 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
-
+.logo{
+  max-width: 100%;
+}
 h1 {
   font-family: "Playfair Display";
   font-style: normal;
@@ -43,6 +45,7 @@ a:hover {
 section {
   position: relative;
   width: 100%;
+  min-width: 100%;
 }
 nav {
   position: fixed;
@@ -51,6 +54,7 @@ nav {
   background-color: #3b322d;
   width: 100%;
   z-index: 55;
+
 }
 .container {
   width: 100%;
@@ -58,6 +62,7 @@ nav {
   margin: 0 auto;
 }
 .nav-bar {
+  max-width: 100%;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
@@ -354,13 +359,24 @@ nav {
     transition: all 1s ease-in-out;
   }
   .nav-menu.active {
-    top: 120px;
+    top: 110px;
     opacity: 1;
     right: 0;
   }
   .link-txt {
     display: none;
   }
+ .btns-wrap{
+  flex-direction: column;
+  max-width: 100%;
+ }
+ .about-us_big-btn{
+  text-align: center;
+ }
+ .about-us_btn{
+  max-width: 100%;
+  text-align: center;
+ }
   .btn {
     border-radius: 10px;
     width: 40px;
