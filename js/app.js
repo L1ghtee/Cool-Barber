@@ -22,8 +22,10 @@ for (const navlink of navlinks) {
 
 //slider
 let position = 0;
-const slidesToShow = 4;
-const slidesToScroll = 1;
+let windowWidth = window.innerWidth
+console.log(windowWidth);
+const slidesToShow= 4;
+const slidesToScroll =1;
 const container = document.querySelector(".slider-mask");
 const track = document.querySelector(".slider-track");
 const btnPrev = document.querySelector(".btn-prev");
