@@ -372,9 +372,11 @@ nav {
  }
  .about-us_big-btn{
   text-align: center;
+  padding: 15px;
  }
  .about-us_btn{
   max-width: 100%;
+  padding: 15px;
   text-align: center;
  }
   .btn {
