@@ -13,7 +13,7 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
-.logo{
+.logo {
   max-width: 100%;
 }
 h1 {
@@ -54,7 +54,6 @@ nav {
   background-color: #3b322d;
   width: 100%;
   z-index: 55;
-
 }
 .container {
   width: 100%;
@@ -269,6 +268,71 @@ nav {
 .about-us_btn:hover {
   border: 1px solid #ff6e40;
 }
+.slider{
+  position: relative;
+  width: 100%;
+}
+.slider-mask {
+  width: 82%;
+  height: 512px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slider-track {
+  display: flex;
+  transition: .5s;
+  
+}
+.slider-item {
+height: 100%;
+}
+.name {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.description {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  max-width: 280px;
+}
+.btn-prev, .btn-next{
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  color: #b7aaa2;
+  transition: all .3s;
+}
+.btn-prev:hover, .btn-next:hover{
+  color: #ff6e40;
+}
+.btn-prev:disabled, .btn-next:disabled{
+  color: #b7aaa284;
+}
+
+.btn-prev{
+  top: 123px;
+  left: 5%;
+ 
+}
+.btn-next{
+  top: 123px;
+  right: 5%;
+}
+
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
   .logo-wrp {
     max-width: 160px;
@@ -366,19 +430,19 @@ nav {
   .link-txt {
     display: none;
   }
- .btns-wrap{
-  flex-direction: column;
-  max-width: 100%;
- }
- .about-us_big-btn{
-  text-align: center;
-  padding: 15px;
- }
- .about-us_btn{
-  max-width: 100%;
-  padding: 15px;
-  text-align: center;
- }
+  .btns-wrap {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .about-us_big-btn {
+    text-align: center;
+    padding: 15px;
+  }
+  .about-us_btn {
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
   .btn {
     border-radius: 10px;
     width: 40px;

@@ -10,21 +10,21 @@ navMenu.addEventListener("click", () => {
 });
 
 // close menu on click menu item
-const navlinks = document.querySelector(".nav-menu").children
+const navlinks = document.querySelector(".nav-menu").children;
 
-for(const navlink of navlinks){
-    navlink.addEventListener('click', function(event){
-        navMenu.classList.remove("active");
-        menu.classList.remove("active");
-        body.classList.remove("overflow-hidden");
-    })
+for (const navlink of navlinks) {
+  navlink.addEventListener("click", function (event) {
+    navMenu.classList.remove("active");
+    menu.classList.remove("active");
+    body.classList.remove("overflow-hidden");
+  });
 }
 
 //slider
 let position = 0;
 const slidesToShow = 4;
 const slidesToScroll = 1;
-const container = document.querySelector(".slider-container");
+const container = document.querySelector(".slider-mask");
 const track = document.querySelector(".slider-track");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
@@ -34,10 +34,10 @@ const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
 
 items.forEach((item) => {
-  item.style.minWidth = "${itemWidth}px";
+  item.style.minWidth = `${itemWidth}px`;
 });
 
-btnPrev.addEventListener("click", () => {
+btnNext.addEventListener("click", () => {
   const itemsLeft =
     itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
   position -=
@@ -45,7 +45,7 @@ btnPrev.addEventListener("click", () => {
   setPosition();
   checkBtns();
 });
-btnNext.addEventListener("click", () => {
+btnPrev.addEventListener("click", () => {
   const itemsLeft = Math.abs(position) / itemWidth;
   position +=
     itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
@@ -54,7 +54,7 @@ btnNext.addEventListener("click", () => {
 });
 
 const setPosition = () => {
-  track.style.transform = "translateX(${position}px)";
+  track.style.transform = `translateX(${position}px)`;
 };
 
 const checkBtns = () => {
