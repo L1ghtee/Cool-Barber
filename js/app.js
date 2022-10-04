@@ -24,7 +24,14 @@ for (const navlink of navlinks) {
 let position = 0;
 let windowWidth = window.innerWidth
 console.log(windowWidth);
-const slidesToShow= 4;
+
+let slidesToShow= 4;
+if(windowWidth <= 999){
+  slidesToShow = 2;
+}
+if(windowWidth<=500){
+  slidesToShow=1;
+}
 const slidesToScroll =1;
 const container = document.querySelector(".slider-mask");
 const track = document.querySelector(".slider-track");
