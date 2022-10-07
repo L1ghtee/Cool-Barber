@@ -268,7 +268,7 @@ nav {
 .about-us_btn:hover {
   border: 1px solid #ff6e40;
 }
-.slider{
+.slider {
   position: relative;
   width: 100%;
 }
@@ -280,16 +280,15 @@ nav {
 }
 .slider-track {
   display: flex;
-  transition: .5s;
-  
+  transition: 0.5s;
 }
 .slider-item {
-  
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .name {
   font-family: "Fira Sans";
   font-style: normal;
@@ -308,8 +307,10 @@ align-items: center;
   line-height: 150%;
   color: #ffffff;
   max-width: 280px;
+  text-align: center;
 }
-.btn-prev, .btn-next{
+.btn-prev,
+.btn-next {
   position: absolute;
   width: 34px;
   height: 34px;
@@ -318,23 +319,79 @@ align-items: center;
   border: none;
   padding: 0;
   color: #b7aaa2;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.btn-prev:hover, .btn-next:hover{
+.btn-prev:hover,
+.btn-next:hover {
   color: #ff6e40;
 }
-.btn-prev:disabled, .btn-next:disabled{
+.btn-prev:disabled,
+.btn-next:disabled {
   color: #b7aaa284;
 }
 
-.btn-prev{
+.btn-prev {
   top: 123px;
   left: 5%;
- 
 }
-.btn-next{
+.btn-next {
   top: 123px;
   right: 5%;
+}
+.bg-color-251D1A {
+  background-color: #251d1a;
+}
+.prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.price-list {
+  margin: 60px auto 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1180px;
+}
+.price-card {
+  text-align: start;
+  font-family: "Fira Sans";
+  max-width: 280px;
+}
+.price-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: #efe7e2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.service {
+  padding: 5px 0;
+  display: flex;
+  border-right: 1px solid #b7aaa2;
+}
+.service-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 173%;
+  color: #efe7e2;
+}
+.service-time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 175%;
+  color: #b7aaa2;
+  margin-left: auto;
+  margin-right: 9px;
+}
+.service-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-right: 14px;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
