@@ -54,6 +54,7 @@ nav {
   background-color: #3b322d;
   width: 100%;
   z-index: 55;
+  transition: top .3s;
 }
 .container {
   width: 100%;
@@ -268,6 +269,9 @@ nav {
 .about-us_btn:hover {
   border: 1px solid #ff6e40;
 }
+.testimonial{
+  padding-bottom: 120px;
+}
 .slider {
   position: relative;
   width: 100%;
@@ -351,7 +355,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 82%;
   max-width: 1180px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .price-card {
   text-align: start;
